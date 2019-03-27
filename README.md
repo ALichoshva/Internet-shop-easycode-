@@ -6,4 +6,5 @@ have developed by different members of the team and also our team was using git 
 <h4>Technologies</h4>
 HTML; CSS; SASS; GULP; Javascript plugins: Owl Carousel, Izimodal, Font Awesome, Range-Slider, Form Styler.
 
-<h4>This project is licensed under the MIT License</h4>
+<h4>License</h4>
+This project is licensed under the MIT License
