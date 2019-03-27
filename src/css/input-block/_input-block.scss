@@ -1,0 +1,81 @@
+.input-block {
+
+    &__wrapper {
+        height: 290px;
+        background-image: url(../img/banner-input-welcome.jpg);
+        background-position: center;
+        background-clip: border-box;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+    }
+
+    &__inner {
+        height: 100%;
+    }
+    
+    &__text {
+        padding-bottom: 54px;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+        color: $white;
+        padding-bottom: 24px;
+    }
+
+    &__form {
+        display: block;
+        max-width: 670px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    &__input {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 100%;
+        height: 56px;
+        border-radius: 4px;
+        border: none;
+        letter-spacing: 0.7px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 30px;
+        padding: 0 50px 0 25px;
+        box-shadow: 0 1px 10px rgba(100, 100, 100, 0.75);  
+    }
+    
+    
+
+    &__input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #90a4ae;;
+    }
+    &__input::-moz-placeholder { /* Firefox 19+ */
+        color: #90a4ae;
+    }
+    &__input:-ms-input-placeholder { /* IE 10+ */
+        color: #90a4ae;
+    }
+    &__input:-moz-placeholder { /* Firefox 18- */
+        color: #90a4ae;
+    }
+
+    &__btn {
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        background: transparent; 
+        position: absolute;
+        top: 18px;
+        right: 20px;
+
+        .fas {
+            color: #78909c;
+            font-size: 20px;
+        }
+    }
+
+}

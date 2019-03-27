@@ -1,0 +1,209 @@
+.header {
+    $root: &;
+
+    &--user {
+        #{$root} {
+            &__inner {
+                @include mobile-large {
+                    flex-direction: column;
+                    padding: 24px 0 16px;
+                    height: auto;
+                }
+                @include mobile {
+                    padding: 24px 0 0;
+                }
+            }
+            &__right-s {
+                @include mobile-large {
+                    margin-top: 32px;
+                    justify-content: space-between;
+                }
+                @include mobile {
+                    justify-content: center;
+                }
+            }
+            &__notify {
+                @include mobile-large {
+                    margin: 0 -8px;
+                }
+                @include mobile {
+                    position: relative;
+                    width: 100%;
+                }
+            }
+            &__actions {
+                @include mobile {
+                    display: none;
+                }
+            }
+        }
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 92px;
+
+        @include mobile {
+            flex-direction: column;
+            padding: 24px 0 0;
+            height: auto;
+        }
+    }
+
+    &__logo {
+        max-width: 197px;
+    }
+
+    &__right-s {
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        position: relative;
+
+        @include mobile {
+            justify-content: center;
+            margin-top: 32px;
+        }
+    }
+
+    &__help {
+        font-size: 15px;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__label-red {
+        color: $tomato;
+    }
+
+    &__notify-wrap {
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        position: relative;
+
+        @include mobile {
+            position: static;
+            padding-bottom: 16px;
+        }
+
+        &:hover {
+            .cart-drop-down,
+            .mail-drop-down,
+            .notify-drop-down {
+                display: block;
+            }
+        }
+    }
+
+    &__notify {
+        display: flex;
+        align-self: stretch;
+        align-items: center;
+        justify-content: center;
+        margin: 0 26px;
+    }
+
+    &__notify-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin: 0 8px;
+        background: $lighten-gray;
+        position: relative;
+        cursor: pointer;
+
+        .fas {
+            font-size: 12px;
+            color: #a0a0a0;
+        }
+    }
+    &__cart {
+        #{$root} {
+            &__item-number {
+                background: $tomato;
+            }
+        }
+        
+        &--user {
+            #{$root} {
+                &__item-number {
+                    background: $green-apple;
+                }
+            }
+        }
+
+
+    }
+    &__mail {
+        #{$root} {
+            &__item-number {
+                background: #ef6c00;
+            }
+        }
+    }
+    &__notif {
+        #{$root} {
+            &__item-number {
+                background: #fcb322;
+            }
+        }
+    }
+    &__item-number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 18px;
+        height: 18px;
+        font-size: 11px;
+        font-weight: 400;
+        border-radius: 50%;
+        color: $white;
+        position: absolute;
+        top: -8px;
+        right: -8px;
+    }
+
+    // actions
+    &__actions {
+        display: flex;
+        margin: 0 -4px;
+
+        &--anon {
+            padding-left: 14px;
+
+            @include mobile {
+                padding-bottom: 16px;
+            }
+        }
+
+        #{$root}{
+            &__btn {
+                width: 72px;
+                height: 32px;
+                line-height: 32px;
+                text-align: center;
+                color: $white;
+                font-size: 12px;
+                font-weight: 400;
+                border-radius: 4px;
+                text-decoration: none;
+                margin: 0 4px;
+
+                &--green {
+                    background: $green-apple;
+                }
+                &--red {
+                    background: $tomato;
+                }
+            }
+        }
+    }
+
+}

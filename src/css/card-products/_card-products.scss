@@ -1,0 +1,131 @@
+.card-products {
+    padding: 15px;
+    width: 25%;
+
+    @include widescreen-large {
+        width: 33.3333%;
+    }
+    @include tablet {
+        width: 50%;
+    }
+    @include mobile-large {
+        width: 100%;
+    }
+
+    &__item {
+        display: block;
+        text-decoration: none;
+        box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
+        background-color: #ffffff;
+    }
+    &__picture {
+        background: #d4d4d4;
+        height: 250px;
+        position: relative;
+        @include laptop {
+            height: 200px;
+        }
+    }
+    &__item-pic {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: inherit;
+        object-fit: inherit;
+    }
+    &__new {
+        border: 30px solid transparent;
+        border-left: 30px solid $green-apple;
+        border-top: 30px solid $green-apple;
+        font-size: 18px;
+        color: $white;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        i {
+            position: absolute;
+            top: -20px;
+            left: -17px;
+        }
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 32px 16px;
+        border-bottom: 1px solid #e7ecf2;
+
+        @include laptop {
+            padding: 25px 15px 16px;
+        }
+    }
+    &__name {
+        color: #263238;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 11px;
+
+        @include laptop {
+            font-size: 16px;
+        }
+    }
+    &__category {
+        color: #8bc34a;
+        font-size: 14px;
+        font-weight: 500;
+
+        @include laptop {
+            font-size: 12px;
+        }
+    }
+    &__price {
+        color: #263238;
+        font-size: 20px;
+        font-weight: 700;
+
+        @include laptop {
+            font-size: 16px;
+        }
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 32px 20px;
+
+        @include laptop {
+            padding: 16px 15px 20px;
+        }
+    }
+    &__bottom-left {
+        display: flex;
+        align-items: center;
+    }
+    &__avatar {
+        width: 30px;
+        height: 30px;
+        background: #b5b5b5;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    &__author-name {
+        padding-left: 12px;
+        color: #546e7a;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &__bottom-right {
+        display: flex;
+    }
+    &__rating {
+        display: flex;
+        font-size: 12px;
+        color: #ffa726;
+    }
+    &__rating-index {
+        padding-left: 12px;
+        color: #b0bec5;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}

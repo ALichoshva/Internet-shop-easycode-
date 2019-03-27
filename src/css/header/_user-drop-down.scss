@@ -1,0 +1,44 @@
+// user-drop-down
+.user-drop-down {
+    display: none;
+    width: 158px;
+    padding: 16px 0;
+    background: $white;
+    box-shadow: 0 16px 20px rgba(216, 216, 216, 0.75);
+    border: 1px solid rgba(216, 216, 216, 0.75);
+    position: absolute;
+    left: 0;
+    top: 92px;
+    z-index: 10;
+
+    @include mobile-large {
+        right: auto;
+        left: 0;
+        top: 50px;
+    }
+    @include mobile {
+        width: 100%;
+    }
+    
+    &__item {
+        display: flex;
+        padding: 12px 20px;
+        color: #546e7a;
+        font-size: 12px;
+        font-weight: 400;
+        transition: color .3s ease-out;
+
+        &:hover {
+            color: $green-apple;
+        }
+
+        &:before {
+            display: block;
+            content: "\f105";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            margin-right: 8px;
+            color: $green-apple;
+        }
+    }
+}
