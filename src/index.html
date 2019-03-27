@@ -18,12 +18,45 @@
         <link rel="stylesheet" href="css/plugins/owl.carousel.min.css">
         <!-- custom style -->
         <link rel="stylesheet" href="css/style.css">
+        <!-- izimodal -->
+        <link rel="stylesheet" href="css/plugins/iziModal.css">
 
     </head>
     <body>
 
         <div class="container-fluid">
-            <!-- header -->
+            <!-- Modal structure start -->
+            <div id="modal">
+                <div class="login">
+                    <span class="login__close">
+                        <i class="fas fa-times"></i>
+                    </span>
+                    <h2 class="login__title">Login</h2>
+
+                    <form action="#" class="login__form">
+                        <div class="login__input-group">
+                            <i class="login__input-icon fas fa-user"></i>
+                            <input class="login__input" type="text" placeholder="Name">
+                        </div>
+                        <div class="login__input-group">
+                            <i class="login__input-icon fas fa-lock"></i>
+                            <input class="login__input" type="password" placeholder="Password">
+                        </div>
+                        <div class="login__bottom">
+                            <button class="login__btn-submit" type="submit">Submit</button>
+
+                            <a href="#" class="login__register">
+                                <i class="login__reg-icon fas fa-edit"></i>
+                                <span class="login__reg-label">Creat An Account?</span>
+                            </a>
+                        </div>
+                        <a href="#" class="login__lost-pass link-decor-inverse">Lost Password?</a>
+                    </form>
+                </div>
+            </div>
+            <!-- Modal structure end -->
+
+            <!-- header start -->
             <div class="header">
                 <div class="container">
                     <div class="header__inner">
@@ -86,13 +119,14 @@
                             </div>
 
                             <div class="header__actions header__actions--anon">
-                                <a href="#" class="header__btn header__btn--green">Login</a>
+                                <a href="#" class="header__btn header__btn--green btn-login-form">Login</a>
                                 <a href="#" class="header__btn header__btn--red">Register</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- header end -->
 
             <!-- header navigation start -->
             <div class="header__menu">

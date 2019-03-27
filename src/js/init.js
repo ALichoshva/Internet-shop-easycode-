@@ -73,6 +73,11 @@ $(function() {
         });
     }
 
+    $("#modal").iziModal({
+        width: 730,
+        radius: 0,
+    });
+
     $(document).on('click', '.btn-login-form', function (event) {
         event.preventDefault();
         // $('#modal').iziModal('setZindex', 99999);
