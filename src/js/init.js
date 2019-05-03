@@ -17,7 +17,7 @@ $(function() {
     (function () {
         // .sibedar
         let sidebar = $('.product-page__side-bar');
-        let close = $('.product-page__sidebar-close');
+        let close = $('.product-page__sidebar-close .fa-times');
 
         // .menu-btn - кнопка
         $('.product-page__mobile-btn').click(function() {
@@ -33,7 +33,7 @@ $(function() {
         });
     }());
 
-    $( ".catalog-tabs" ).tabs();
+    $( ".release-products__tabs" ).tabs();
 
     $('.owl-carousel').owlCarousel({
         loop:true,
@@ -57,6 +57,10 @@ $(function() {
     if($("div").is(".upload-page-wrap")) {
         $('.upload-form select').styler();
         $('.upload-form .upload-form__type-file').styler();
+    }
+
+    if($("div").is(".product-price")) {
+        $('.product-price select').styler();
     }
 
     if($('div').is('.product-page__input')){

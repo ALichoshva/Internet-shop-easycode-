@@ -1,9 +1,26 @@
 .product-details {
     background-color: #f4f6f5;
+
+    .breadcrumbs {
+        padding-top: 50px;
+
+        &-home {
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            color: $light-gray;
+        }
+
+        &-uploadProduct {
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            color: $dark-gray;
+        }
+    }
+
     &__item {
         display: flex;
         justify-content: space-between;
-        padding: 102px 0 123px;
+        padding: 40px 0 123px;
 
         @include laptop {
             flex-direction: column-reverse;

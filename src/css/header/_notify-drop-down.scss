@@ -57,6 +57,10 @@
         font-size: 12px;
         font-weight: 400;
         margin-bottom: 7px;
+        cursor: pointer;
+    }
+    &__subject:hover {
+        text-decoration: underline;
     }
     &__date {
         color: #707070;

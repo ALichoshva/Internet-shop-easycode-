@@ -25,76 +25,208 @@
     <body>
 
         <div class="container-fluid">
-            <!-- header -->
-            <div class="header">
+            <!-- header start-->
+            <div class="header header--user">
                 <div class="container">
                     <div class="header__inner">
                         <a href="#" class="header__logo">
                             <img src="img/logo.png" alt="logo">
                         </a>
-
+    
                         <div class="header__right-s">
                             <div class="header__help">
                                 <span class="header__label-red">Need help?</span>
-                                <span>
-                                    Talk to an expert:
-                                    <a class="link-inherit link-decor-inverse" href="tel:+61 3 8376 6284">+61 3 8376 6284</a>
-                                </span>
+                                <span> Talk to an expert: <a class="link-inherit link-decor-inverse" href="tel:+61 3 8376 6284">+61 3 8376 6284</a></span>
                             </div>
-
-                            <div class="header__notify-wrap">
-                                <div class="header__notify-item header__cart">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    <span class="header__item-number">8</span>
+    
+                            <div class="header__notify">
+    
+                                <div class="header__notify-wrap">
+                                    <div class="header__notify-item header__notif">
+                                        <i class="fas fa-bell"></i>
+                                        <span class="header__item-number">8</span>
+                                    </div>
+    
+                                    <div class="notify-drop-down">
+                                        <ul class="notify-drop-down__list">
+                                            <li class="notify-drop-down__list-item notify-drop-down__list-item--unread">
+                                                <div class="notify-drop-down__author"></div>
+                                                <div class="notify-drop-down__info">
+                                                    <div class="notify-drop-down__subject">Need WP Help!</div>
+                                                    <div class="notify-drop-down__date">01 Dec, 2016</div>
+                                                </div>
+                                                <div class="notify-drop-down__icon">
+                                                    <i class="far fa-bell"></i>
+                                                </div>
+                                            </li>
+                                            <li class="notify-drop-down__list-item">
+                                                <div class="notify-drop-down__author"></div>
+                                                <div class="notify-drop-down__info">
+                                                    <div class="notify-drop-down__subject">Need WP Help!</div>
+                                                    <div class="notify-drop-down__date">01 Dec, 2016</div>
+                                                </div>
+                                                <div class="notify-drop-down__icon">
+                                                    <i class="far fa-bell"></i>
+                                                </div>
+                                            </li>
+                                            <li class="notify-drop-down__list-item">
+                                                <div class="notify-drop-down__author"></div>
+                                                <div class="notify-drop-down__info">
+                                                    <div class="notify-drop-down__subject">Need WP Help!</div>
+                                                    <div class="notify-drop-down__date">01 Dec, 2016</div>
+                                                </div>
+                                                <div class="notify-drop-down__icon">
+                                                    <i class="far fa-bell"></i>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-
-                                <div class="cart-drop-down">
-                                    <ul class="cart-drop-down__list">
-                                        <li class="cart-drop-down__list-item">
-                                            <a href="#" class="cart-drop-down__item-img">
-                                                <img
-                                                    class="cart-drop-down__item-pic"
-                                                    src="https://store.storeimages.cdn-apple.com/4667/as-images.apple.com/is/image/AppleInc/aos/published/images/M/QH/MQH12/MQH12?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1516399629065"
-                                                    alt="product">
-                                            </a>
-                                            <div class="cart-drop-down__item-info">
-                                                <a href="#" class="cart-drop-down__item-name link-decor-inverse">Grand BalletGrand BalletGrand BalletGrand Ballet</a>
-                                                <div class="cart-drop-down__item-category">WordPress</div>
-                                                <div class="cart-drop-down__item-price">$59</div>
+    
+                                <div class="header__notify-wrap">
+                                    <div class="header__notify-item header__mail">
+                                        <i class="fas fa-envelope"></i>
+                                        <span class="header__item-number">8</span>
+                                    </div>
+    
+                                    <div class="mail-drop-down">
+                                        <ul class="mail-drop-down__list">
+                                            <li class="mail-drop-down__list-item mail-drop-down__list-item--unread">
+                                                <div class="mail-drop-down__author">
+                                                    <img class="mail-drop-down__avatar" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/200px-Cat03.jpg" alt="avatar">
+                                                </div>
+                                                <div class="mail-drop-down__info">
+                                                    <div class="mail-drop-down__name">Kazi Fahim</div>
+                                                    <div class="mail-drop-down__subject">Need WP Help!</div>
+                                                    <div class="mail-drop-down__date">01 Dec, 2016</div>
+                                                </div>
+                                                <div class="mail-drop-down__icon">
+                                                    <i class="far fa-envelope"></i>
+                                                </div>
+                                            </li>
+                                            <li class="mail-drop-down__list-item">
+                                                <div class="mail-drop-down__author"></div>
+                                                <div class="mail-drop-down__info">
+                                                    <div class="mail-drop-down__name">Richi Lenal</div>
+                                                    <div class="mail-drop-down__subject">Need WP Help!</div>
+                                                    <div class="mail-drop-down__date">26 Nov, 2016</div>
+                                                </div>
+                                                <div class="mail-drop-down__icon">
+                                                    <i class="far fa-envelope"></i>
+                                                </div>
+                                            </li>
+                                            <li class="mail-drop-down__list-item">
+                                                <div class="mail-drop-down__author"></div>
+                                                <div class="mail-drop-down__info">
+                                                    <div class="mail-drop-down__name">PsdBosS</div>
+                                                    <div class="mail-drop-down__subject">Psd Template Help!</div>
+                                                    <div class="mail-drop-down__date">26 Nov, 2016</div>
+                                                </div>
+                                                <div class="mail-drop-down__icon">
+                                                    <i class="fas fa-reply"></i>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+    
+                                <div class="header__notify-wrap">
+                                    <div class="header__notify-item header__cart header__cart--user">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="header__item-number">8</span>
+                                    </div>
+    
+                                    <div class="cart-drop-down">
+                                        <ul class="cart-drop-down__list">
+                                            <li class="cart-drop-down__list-item">
+                                                <a href="#" class="cart-drop-down__item-img">
+                                                    <img class="cart-drop-down__item-pic" src="https://store.storeimages.cdn-apple.com/4667/as-images.apple.com/is/image/AppleInc/aos/published/images/M/QH/MQH12/MQH12?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1516399629065" alt="product">
+                                                </a>
+                                                <div class="cart-drop-down__item-info">
+                                                    <a href="#" class="cart-drop-down__item-name link-decor-inverse">Grand BalletGrand BalletGrand BalletGrand Ballet</a>
+                                                    <div class="cart-drop-down__item-category">WordPress</div>
+                                                    <div class="cart-drop-down__item-price">$59</div>
+                                                </div>
+                                            </li>
+    
+                                            <li class="cart-drop-down__list-item">
+                                                <a href="#" class="cart-drop-down__item-img"></a>
+                                                <div class="cart-drop-down__item-info">
+                                                    <a href="#" class="cart-drop-down__item-name link-decor-inverse">Apple Device</a>
+                                                    <div class="cart-drop-down__item-category">WordPress</div>
+                                                    <div class="cart-drop-down__item-price">$749</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+    
+                                        <div class="cart-drop-down__bottom">
+                                            <div class="cart-drop-down__total-price">
+                                                <span>Total</span>
+                                                <span>$118</span>
                                             </div>
-                                        </li>
-
-                                        <li class="cart-drop-down__list-item">
-                                            <a href="#" class="cart-drop-down__item-img"></a>
-                                            <div class="cart-drop-down__item-info">
-                                                <a href="#" class="cart-drop-down__item-name link-decor-inverse">Apple Device</a>
-                                                <div class="cart-drop-down__item-category">WordPress</div>
-                                                <div class="cart-drop-down__item-price">$749</div>
+                                            <div class="cart-drop-down__actions">
+                                                <a href="#" class="cart-drop-down__action-cart">Go to Cart</a>
+                                                <a href="#" class="cart-drop-down__action-checkout">Go to Checkout</a>
                                             </div>
-                                        </li>
-                                    </ul>
-
-                                    <div class="cart-drop-down__bottom">
-                                        <div class="cart-drop-down__total-price">
-                                            <span>Total</span>
-                                            <span>$118</span>
-                                        </div>
-                                        <div class="cart-drop-down__actions">
-                                            <a href="#" class="cart-drop-down__action-cart">Go to Cart</a>
-                                            <a href="#" class="cart-drop-down__action-checkout">Go to Checkout</a>
                                         </div>
                                     </div>
                                 </div>
+    
+                                <!-- user block -->
+                                <div class="header__user">
+                                    <div class="header__user-avatar">
+                                        <img class="header__user-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/200px-Cat03.jpg" alt="avatar">
+                                    </div>
+                                    <div class="header__user-info">
+                                        <div class="header__user-name">Mike Hussy</div>
+                                        <div class="header__user-price">$171.00</div>
+                                    </div>
+                                    <div class="header__user-arrow">
+                                        <i class="fas fa-angle-down"></i>
+                                    </div>
+    
+                                    <ul class="user-drop-down">
+                                        <li class="user-drop-down__item">
+                                            <a class="link-inherit link-no-decor" href="#">Profile Page</a>
+                                        </li>
+                                        <li class="user-drop-down__item">
+                                            <a class="link-inherit link-no-decor" href="#">Portfolio</a>
+                                        </li>
+                                        <li class="user-drop-down__item">
+                                            <a class="link-inherit link-no-decor" href="#">Account Setting</a>
+                                        </li>
+                                        <li class="user-drop-down__item">
+                                            <a class="link-inherit link-no-decor" href="#">Downloads</a>
+                                        </li>
+                                        <li class="user-drop-down__item">
+                                            <a class="link-inherit link-no-decor" href="#">Wishlist</a>
+                                        </li>
+                                        <li class="user-drop-down__item">
+                                            <a class="link-inherit link-no-decor" href="#">Upload Item</a>
+                                        </li>
+                                        <li class="user-drop-down__item">
+                                            <a class="link-inherit link-no-decor" href="#">Statement</a>
+                                        </li>
+                                        <li class="user-drop-down__item">
+                                            <a class="link-inherit link-no-decor" href="#">Withdraws</a>
+                                        </li>
+                                        <li class="user-drop-down__item">
+                                            <a class="link-inherit link-no-decor" href="#">Logout</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                        
                             </div>
-
-                            <div class="header__actions header__actions--anon">
-                                <a href="#" class="header__btn header__btn--green">Login</a>
-                                <a href="#" class="header__btn header__btn--red">Register</a>
+                            
+    
+                            <div class="header__actions">
+                                <a href="#" class="header__btn header__btn--red">Logout</a>   
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- header end -->
 
             <!-- header navigation start -->
             <div class="header__menu">
@@ -154,14 +286,19 @@
             </div>
             <!-- input block end -->
 
+            <!-- product details start -->
             <div class="product-details">
                 <div class="container">
+                    <div class="breadcrumbs">
+                        <a href="#" class="breadcrumbs-home link-no-decor">
+                            Home  -   
+                        </a>
+                        <span class="breadcrumbs-uploadProduct">
+                            Upload Product
+                        </span>
+                    </div>
                     <div class="product-details__item">
                         <div class="product-details__content">
-                            <!--<img class="product-details__img"
-                            src="https://s1.1zoom.ru/big0/930/Coast_Sunrises_and_sunsets_Waves_USA_Ocean_Kaneohe_521540_1280x775.jpg"
-                            alt="">-->
-
                             <div class="product-details__picture">
                                 <img class="product-details__picture-item"
                                     src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/02/09/16/istock-638615722.jpg?w968h681"
@@ -285,7 +422,7 @@
                                     </div>
 
                                 </form>
-                                <ul class="prodict-price__nav-btn">
+                                <ul class="product-price__nav-btn">
                                     <li class="product-price__list-btn ">
                                         <a class="product-price__btn product-price__btn--cart" href="#">Add To Cart
                                         </a>
@@ -369,7 +506,9 @@
                     </div>
                 </div>
             </div>
+            <!-- product details end -->
 
+            <!-- footer start -->
             <div class="footer">
                 <div class="footer__item">
                     <div class="footer__company">
@@ -483,6 +622,7 @@
                         respective owners.</span>
                 </div>
             </div>
+            <!-- footer end -->
         </div>
         <!-- jquery -->
         <script

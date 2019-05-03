@@ -90,6 +90,8 @@
         border: none;
         outline: none;
         font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
 
 
         @include mobile-large {
@@ -182,6 +184,7 @@
         background-color: #f9f9f9;
         color: #707070;
         height: 40px;
+        padding: 0 20px;
     }
 
     .jq-number__field {

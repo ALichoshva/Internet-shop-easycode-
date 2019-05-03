@@ -1,7 +1,7 @@
 .product-page {
     $root: &;
     background-color: #f4f6f5;
-    padding-top: 40px;
+    padding-top: 50px;
 
     &__side-bar {
         width: 270px;
@@ -65,6 +65,10 @@
             line-height: 14px;
         }
 
+        &-title:hover {
+            color: $green-apple;
+        }
+
         &-value {
             color: #90a4ae;
             line-height: 14px;
@@ -102,10 +106,6 @@
             margin-bottom: 21px;
         }
 
-        &__info {
-
-        }
-
         &__text-wrapper {
             display: flex;
             justify-content: space-between;
@@ -121,6 +121,7 @@
             font-size: 16px;
             font-weight: 700;
             margin-bottom: 12px;
+            cursor: pointer;
         }
 
         &__description {
@@ -267,22 +268,24 @@
     // price-range end
 
     &__sidebar-close {
-        display: none;
-        padding: 15px;
-        justify-content: flex-end;
-        font-size: 24px;
-        cursor: pointer;
-        color: #90a4ae;
-        transition: color .1s ease-out;
+        text-align: right;
 
-        @include tablet {
-            display: flex;
-            justify-content: flex-end;
+        .fa-times {
+            display: none;
+            padding: 15px;
             font-size: 24px;
-        }
+            cursor: pointer;
+            color: #90a4ae;
+            transition: color .1s ease-out;
 
-        &:hover {
-            color: $tomato;
+            @include tablet {
+                display: inline-block;
+                font-size: 24px;
+            }
+
+            &:hover {
+                color: $tomato;
+            }
         }
     }
 }

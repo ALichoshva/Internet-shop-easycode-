@@ -17,11 +17,19 @@
         text-decoration: none;
         box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
         background-color: #ffffff;
+        transition: box-shadow .3s ease-out;
     }
+
+    &__item:hover {
+        transition: box-shadow .3s ease-out;
+        box-shadow: 0 16px 20px rgba(216, 216, 216, 0.75);
+    }
+
     &__picture {
         background: #d4d4d4;
         height: 250px;
         position: relative;
+        color: $light-gray;
         @include laptop {
             height: 200px;
         }
@@ -29,8 +37,7 @@
     &__item-pic {
         width: 100%;
         height: 100%;
-        -o-object-fit: inherit;
-        object-fit: inherit;
+        object-fit: cover;
     }
     &__new {
         border: 30px solid transparent;
